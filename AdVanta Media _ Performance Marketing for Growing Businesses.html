@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>AdVanta Media | Performance Marketing for Growing Businesses</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,700&display=swap" rel="stylesheet">
+<style>
+:root{--p:#6D28D9;--p2:#8B5CF6;--pd:#2E1065;--tint:#F3EEFF;--ink:#17112B;--mut:#6B6485;--line:#E7E1F5;--bg:#fff;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+html{scroll-padding-top:90px;scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:72px 0}
+h1,h2,h3{margin:0;letter-spacing:-.03em;line-height:1.02}
+h1{font-size:clamp(2.6rem,7vw,5.4rem);font-weight:500}
+h2{font-size:clamp(2rem,4.6vw,3.4rem);font-weight:500;max-width:15ch}
+h3{font-size:1.4rem;font-weight:500;letter-spacing:-.02em;line-height:1.15}
+p{margin:0}
+.lead{color:var(--mut);font-size:1.1rem;max-width:56ch}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:5px 13px;font-size:.82rem;color:var(--p);background:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;border-radius:99px;padding:8px 8px 8px 22px;font-weight:500;background:var(--p);color:#fff;border:0;font:inherit;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--pd)}
+.btn i{width:34px;height:34px;border-radius:50%;background:#fff;color:var(--p);display:grid;place-items:center;font-style:normal}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.btn.ghost:hover{background:var(--tint)}
+:focus-visible{outline:3px solid var(--p2);outline-offset:3px}
+/* nav */
+header{position:sticky;top:0;z-index:20;padding:12px 0;background:rgba(255,255,255,.88);backdrop-filter:blur(10px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.logo{font-weight:700;font-size:1.25rem;letter-spacing:-.03em;display:flex;align-items:center;gap:8px}
+.logo b{width:28px;height:28px;border-radius:9px;background:var(--p);display:inline-block;position:relative}
+.logo b::after{content:"";position:absolute;inset:8px 7px 7px;border:3px solid #fff;border-bottom:0;border-radius:3px 3px 0 0}
+nav.pill{display:flex;gap:4px;border:1px solid var(--line);border-radius:99px;padding:4px;background:#fff}
+nav.pill a{padding:7px 14px;border-radius:99px;font-size:.9rem}
+nav.pill a:hover{background:var(--tint);color:var(--p)}
+.nav-cta{padding:6px 6px 6px 18px;font-size:.9rem}
+.nav-cta i{width:28px;height:28px}
+/* hero */
+.hero{padding:24px 0 40px}
+.hero-card{border-radius:36px;background:linear-gradient(140deg,#8B5CF6 0%,#6D28D9 45%,#2E1065 100%);color:#fff;padding:56px;position:relative;overflow:hidden;min-height:620px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px}
+.hero-card::before{content:"";position:absolute;right:-120px;top:-120px;width:560px;height:560px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.32),transparent 65%)}
+.hero-card::after{content:"AV";position:absolute;right:-30px;bottom:-110px;font-size:26rem;font-weight:700;letter-spacing:-.08em;color:rgba(255,255,255,.07);line-height:1;pointer-events:none}
+.hero .tag{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);color:#fff;margin-bottom:22px}
+.hero p.lead{color:#E9DEFF;margin:24px 0 8px}
+.hero .btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.hero .btn{background:#fff;color:var(--pd)}
+.hero .btn i{background:var(--p);color:#fff}
+.hero .btn.ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.hero-l{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:center}
+.hero-r{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:flex-end;gap:14px}
+.float{background:#fff;color:var(--ink);border-radius:24px;padding:20px 22px}
+.float small{color:var(--mut);display:block;font-size:.82rem}
+.float .big{font-size:2.6rem;font-weight:500;letter-spacing:-.04em;line-height:1;color:var(--p);margin:6px 0 4px}
+.bars{display:flex;align-items:flex-end;gap:7px;height:70px;margin-top:12px}
+.bars span{flex:1;border-radius:8px 8px 3px 3px;background:var(--tint)}
+.bars span:last-child{background:var(--p)}
+.float.glass{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.28)}
+.float.glass small{color:#E9DEFF}
+.plat{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.plat span{border-radius:99px;padding:5px 12px;font-size:.85rem;background:rgba(255,255,255,.16)}
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:36px}
+.stat{border:1px dashed #C9B8F0;border-radius:22px;padding:18px;background:var(--tint)}
+.stat b{display:block;font-size:1.05rem;font-weight:500;color:var(--p)}
+.stat span{font-size:.85rem;color:var(--mut)}
+.note{font-size:.85rem;color:var(--mut);margin-top:14px}
+/* bento */
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.bento{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.card{border-radius:28px;padding:26px;min-height:250px;display:flex;flex-direction:column;justify-content:space-between;background:var(--tint);transition:transform .25s}
+.card:hover{transform:translateY(-4px)}
+.card p{color:var(--mut);font-size:.95rem;margin-top:10px}
+.card.v{background:var(--p);color:#fff}.card.v p{color:#E9DEFF}
+.card.d{background:var(--pd);color:#fff}.card.d p{color:#D5C4FA}
+.card.w{background:#fff;border:1px solid var(--line)}
+.arr{align-self:flex-end;width:40px;height:40px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font-size:1rem}
+.v .arr,.d .arr{background:#fff;color:var(--p)}
+/* cases */
+.cases{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.case{border:1px solid var(--line);border-radius:28px;overflow:hidden;background:#fff}
+.case .ph{height:150px;background:linear-gradient(135deg,var(--p2),var(--pd));position:relative;display:flex;align-items:flex-end;padding:16px}
+.case:nth-child(2) .ph{background:linear-gradient(135deg,#C4B5FD,var(--p))}
+.case:nth-child(3) .ph{background:linear-gradient(135deg,var(--pd),#000)}
+.case .ph span{background:#fff;border-radius:99px;font-size:.78rem;padding:4px 11px}
+.case .in{padding:22px}
+.case ul{list-style:none;padding:0;margin:14px 0 0;display:grid;gap:8px}
+.case li{display:flex;justify-content:space-between;font-size:.92rem;border-bottom:1px solid var(--line);padding-bottom:8px}
+.case li em{font-style:normal;color:var(--p)}
+.flag{margin-top:24px;border-radius:22px;background:var(--tint);padding:18px 22px;color:var(--pd);font-size:.95rem}
+/* process */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;counter-reset:s}
+.step{border-top:2px solid var(--p);padding-top:16px;counter-increment:s}
+.step::before{content:counter(s);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--p);color:#fff;margin-bottom:14px;font-weight:500}
+.step p{color:var(--mut);font-size:.93rem;margin-top:6px}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chips span{border:1px solid var(--line);border-radius:99px;padding:10px 18px;background:#fff}
+.chips span:hover{background:var(--p);color:#fff}
+/* pricing */
+.prices{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.price{border:1px solid var(--line);border-radius:28px;padding:28px;display:flex;flex-direction:column;gap:14px}
+.price.hot{background:var(--pd);color:#fff;border-color:var(--pd)}
+.price .amt{font-size:2.4rem;font-weight:500;letter-spacing:-.04em;line-height:1}
+.price .amt small{font-size:.9rem;color:var(--mut);letter-spacing:0}
+.price.hot .amt small,.price.hot li{color:#D5C4FA}
+.price ul{margin:0;padding:0;list-style:none;display:grid;gap:7px;font-size:.93rem;color:var(--mut);flex:1}
+.price li::before{content:"✓ ";color:var(--p2);font-weight:700}
+.price.hot .btn{background:#fff;color:var(--pd)}.price.hot .btn i{background:var(--p);color:#fff}
+/* faq */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font-size:1.15rem;font-weight:500;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--p);font-size:1.5rem;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--mut);margin-top:10px;max-width:64ch}
+.faq{display:grid;grid-template-columns:1fr 1.4fr;gap:40px}
+/* contact */
+.cta{border-radius:36px;background:var(--p);color:#fff;padding:48px;display:grid;grid-template-columns:1fr 1.1fr;gap:40px}
+.cta .lead{color:#E9DEFF;margin-top:18px}
+form{display:grid;gap:12px;background:#fff;color:var(--ink);border-radius:26px;padding:24px}
+form .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+label{font-size:.82rem;color:var(--mut);display:grid;gap:5px}
+input,select,textarea{font:inherit;border:1px solid var(--line);border-radius:14px;padding:11px 13px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:80px;resize:vertical}
+.sent{display:none;color:var(--p);font-weight:500}
+footer{padding:48px 0 32px;border-top:1px solid var(--line);margin-top:72px}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr 1fr;gap:28px}
+footer h4{margin:0 0 10px;font-size:.95rem;font-weight:500}
+footer a,footer li{display:block;color:var(--mut);font-size:.92rem;margin-bottom:6px;list-style:none}
+footer ul{padding:0;margin:0}
+footer a:hover{color:var(--p)}
+.copy{margin-top:30px;color:var(--mut);font-size:.85rem}
+@media(max-width:900px){
+nav.pill{display:none}
+.hero-card{grid-template-columns:1fr;padding:32px 24px;min-height:0}
+.hero-card::after{font-size:14rem}
+.stats{grid-template-columns:repeat(2,1fr)}
+.bento,.cases,.prices{grid-template-columns:1fr}
+.steps{grid-template-columns:1fr 1fr}
+.faq,.cta{grid-template-columns:1fr}
+.cta{padding:28px 20px}
+.fg{grid-template-columns:1fr 1fr}
+form .two{grid-template-columns:1fr}
+section{padding:52px 0}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top"><b></b>AdVanta Media</a>
+<nav class="pill" aria-label="Main"><a href="#services">Services</a><a href="#work">Case studies</a><a href="#process">Process</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a></nav>
+<a class="btn nav-cta" href="#contact">Book a call <i>↗</i></a>
+</div></header>
+
+<main id="top">
+<div class="wrap hero"><div class="hero-card">
+<div class="hero-l">
+<span class="tag" style="align-self:flex-start">Performance marketing for growing businesses</span>
+<h1>We turn ad spend into measurable growth.</h1>
+<p class="lead">We help ambitious businesses reach the right people, generate qualified leads and increase sales through strategic media buying and continuous optimisation. Every ad has a job. Make yours deliver.</p>
+<div class="btns"><a class="btn" href="#contact">Book a strategy call <i>↗</i></a><a class="btn ghost" href="#work">Explore our results <i style="background:#fff;color:var(--p)">↓</i></a></div>
+</div>
+<div class="hero-r">
+<div class="float glass"><small>Platforms we manage</small><div class="plat"><span>Meta Ads</span><span>Google Ads</span><span>TikTok Ads</span><span>Analytics</span></div></div>
+<div class="float"><small>Illustrative example, not a client result</small><div class="big">4.0x</div><small>ROAS on ₦150,000 spend → ₦600,000 attributed revenue</small><div class="bars" aria-hidden="true"><span style="height:30%"></span><span style="height:45%"></span><span style="height:40%"></span><span style="height:65%"></span><span style="height:100%"></span></div></div>
+</div>
+</div></div>
+
+<section style="padding-top:24px"><div class="wrap">
+<span class="tag">Results at a glance</span>
+<h2 style="margin-top:18px">Advertising should be measured, not guessed.</h2>
+<p class="lead" style="margin-top:18px">Audience research, creative testing, campaign optimisation and clear reporting help you make better advertising decisions.</p>
+<div class="stats">
+<div class="stat"><b>₦12.5M+</b><span>Ad spend managed</span></div>
+<div class="stat"><b>₦48M+</b><span>Revenue attributed to campaigns</span></div>
+<div class="stat"><b>1,850+</b><span>Qualified leads generated</span></div>
+<div class="stat"><b>42</b><span>Client campaigns managed</span></div>
+<div class="stat"><b>14 months</b><span>Average client retention</span></div>
+</div>
+<p class="note">Sample figures shown for layout. Replace with metrics backed by campaign reports or client records before publishing.</p>
+</div></section>
+
+<section id="services"><div class="wrap">
+<div class="head"><div><span class="tag">Services</span><h2 style="margin-top:18px">How we build campaigns that perform.</h2></div>
+<p class="lead">Not a fixed menu. We combine the right tools for your goal, from strategy to scale.</p></div>
+<div class="bento">
+<a class="card v" href="#contact"><div><h3>Meta Ads</h3><p>Facebook and Instagram campaigns built for sales, qualified leads and customer acquisition.</p></div><span class="arr">↗</span></a>
+<a class="card" href="#contact"><div><h3>Google Ads</h3><p>Reach people actively searching for your product or service through Search, Shopping and more.</p></div><span class="arr">↗</span></a>
+<a class="card d" href="#contact"><div><h3>TikTok Ads</h3><p>Short-form creative, tested and tied to measurable actions.</p></div><span class="arr">↗</span></a>
+<a class="card w" href="#contact"><div><h3>Lead generation</h3><p>Enquiries, bookings and quote requests, with lead quality tracked alongside volume.</p></div><span class="arr">↗</span></a>
+<a class="card" href="#contact"><div><h3>E-commerce advertising</h3><p>Connect spend to purchases, order value, ROAS and customer acquisition cost.</p></div><span class="arr">↗</span></a>
+<a class="card v" href="#contact"><div><h3>Tracking, audits and landing pages</h3><p>Reliable measurement, an independent account review and fewer conversion leaks.</p></div><span class="arr">↗</span></a>
+</div></div></section>
+
+<section id="work" style="background:var(--tint)"><div class="wrap">
+<div class="head"><div><span class="tag" style="border-color:#D9CBF7">Case studies</span><h2 style="margin-top:18px">Real campaigns. Clear numbers.</h2></div>
+<p class="lead">Every case study states the period, spend, conversion event, data source and attribution method.</p></div>
+<div class="cases">
+<article class="case"><div class="ph"><span>Meta Ads · Fashion · Nigeria</span></div><div class="in"><h3>E-commerce sales</h3><p style="color:var(--mut);font-size:.93rem;margin-top:8px">Increase online purchases while controlling acquisition cost.</p><ul><li>Ad spend<em>₦150,000</em></li><li>Purchases<em>30</em></li><li>Attributed revenue<em>₦600,000</em></li><li>ROAS<em>4.0x</em></li></ul></div></article>
+<article class="case"><div class="ph"><span>Meta or Google · Services</span></div><div class="in"><h3>Lead generation</h3><p style="color:var(--mut);font-size:.93rem;margin-top:8px">A steadier flow of enquiries, with qualified leads told apart from the rest.</p><ul><li>Ad spend<em>₦200,000</em></li><li>Cost per lead<em>₦2,500</em></li><li>Qualified leads<em>32 of 80</em></li><li>Cost per qualified lead<em>₦6,250</em></li></ul></div></article>
+<article class="case"><div class="ph"><span>Online education</span></div><div class="in"><h3>Digital product sales</h3><p style="color:var(--mut);font-size:.93rem;margin-top:8px">Paying customers at a cost that fits the product's price and margin.</p><ul><li>Checkout initiations<em>140</em></li><li>Paid purchases<em>35</em></li><li>Cost per purchase<em>₦4,000</em></li><li>ROAS<em>3.75x</em></li></ul></div></article>
+</div>
+<div class="flag"><b>Sample figures, not completed client projects.</b> Attributed revenue is not profit, and ROAS is not ROI. Replace placeholders with verified data and client approval before publishing.</div>
+</div></section>
+
+<section id="process"><div class="wrap">
+<div class="head"><div><span class="tag">Our process</span><h2 style="margin-top:18px">From strategy to scale.</h2></div>
+<p class="lead">A structured process with clear responsibilities and a deliverable at every stage.</p></div>
+<div class="steps">
+<div class="step"><h3>Discovery call</h3><p>We learn your offer, audience, sales process and goals.</p></div>
+<div class="step"><h3>Account audit</h3><p>We review past performance, structure, tracking and creative.</p></div>
+<div class="step"><h3>Campaign strategy</h3><p>Objectives, budget assumptions, creative needs and success metrics, in a documented media plan.</p></div>
+<div class="step"><h3>Tracking and prep</h3><p>We check pixels, forms, feeds and conversion events before launch.</p></div>
+<div class="step"><h3>Launch</h3><p>Approved campaigns go live with defined budgets and measurement.</p></div>
+<div class="step"><h3>Optimise</h3><p>We test variations and log every adjustment.</p></div>
+<div class="step"><h3>Report</h3><p>Results, findings and recommended next actions, reviewed with you.</p></div>
+<div class="step" style="border-color:var(--line)"><h3>Why us</h3><p>Business-focused strategy, transparent reporting, continuous testing and responsible budgets.</p></div>
+</div>
+<h3 style="margin:56px 0 18px">Industries we serve</h3>
+<div class="chips"><span>E-commerce and retail</span><span>Real estate</span><span>Education and digital products</span><span>Professional services</span><span>Beauty and lifestyle</span><span>B2B</span><span>Healthcare and regulated industries</span></div>
+</div></section>
+
+<section id="pricing" style="padding-top:0"><div class="wrap">
+<div class="head"><div><span class="tag">Pricing</span><h2 style="margin-top:18px">Clear scope. Defined responsibilities.</h2></div>
+<p class="lead">Illustrative starting points. Ad spend is paid separately from management fees.</p></div>
+<div class="prices">
+<div class="price"><h3>Campaign Launch</h3><div class="amt">₦100,000 <small>one-time</small></div><ul><li>Strategy session</li><li>One advertising platform</li><li>Campaign setup and tracking review</li><li>Creative direction and launch checklist</li></ul><a class="btn" href="#contact">Enquire <i>↗</i></a></div>
+<div class="price hot"><h3>Growth Management</h3><div class="amt">₦150,000 <small>per month</small></div><ul><li>One platform, ongoing management</li><li>Creative testing and budget monitoring</li><li>Regular optimisation</li><li>Monthly report and review session</li></ul><a class="btn" href="#contact">Discuss <i>↗</i></a></div>
+<div class="price"><h3>Performance Partner</h3><div class="amt">₦300,000 <small>per month</small></div><ul><li>Up to two platforms</li><li>Creative testing roadmap</li><li>Landing page recommendations</li><li>Detailed reporting and strategy meetings</li></ul><a class="btn" href="#contact">Discuss <i>↗</i></a></div>
+</div>
+<p class="note">Custom enterprise proposals available for multiple brands, large budgets or complex funnels. We do not guarantee specific sales, leads, ROAS or profit.</p>
+</div></section>
+
+<section id="faq" style="padding-top:0"><div class="wrap faq">
+<div><span class="tag">FAQ</span><h2 style="margin-top:18px">Questions, answered.</h2></div>
+<div>
+<details><summary>Do you guarantee sales or leads?</summary><p>No. We set clear objectives and work to improve performance, but outcomes depend on your offer, market, pricing, creative, landing page and competition.</p></details>
+<details><summary>Is your fee the same as my ad budget?</summary><p>No. The management fee covers our services. Advertising spend is paid separately to the platform.</p></details>
+<details><summary>What is ROAS?</summary><p>Attributed revenue divided by ad spend. ₦500,000 from ₦100,000 spent is 5.0x, which does not mean ₦400,000 profit.</p></details>
+<details><summary>Who owns the ad account?</summary><p>You do. We receive only the permissions needed to do the work.</p></details>
+<details><summary>How soon will I see results?</summary><p>Campaigns generate data soon after launch, but reliable conclusions depend on conversion volume, tracking quality and sales cycle.</p></details>
+<details><summary>Can you manage my existing campaigns?</summary><p>Yes, after an account review and agreement on scope.</p></details>
+</div></div></section>
+
+<section id="contact" style="padding-top:0"><div class="wrap"><div class="cta">
+<div><h2 style="color:#fff;max-width:12ch">Ready to make your advertising accountable?</h2><p class="lead">Tell us what you want your advertising to achieve. We will review your enquiry, contact you and outline next steps if we are a good fit.</p>
+<div style="margin-top:22px"><a class="btn" style="background:#fff;color:var(--pd)" href="#contact">Chat on WhatsApp <i style="background:var(--p);color:#fff">↗</i></a></div></div>
+<form id="f" onsubmit="event.preventDefault();this.style.display='none';document.getElementById('ok').style.display='block'">
+<div class="two"><label>Full name<input required></label><label>Business name<input required></label></div>
+<div class="two"><label>Email<input type="email" required></label><label>Phone or WhatsApp<input required></label></div>
+<div class="two"><label>Main goal<select><option>Generate qualified leads</option><option>Increase online sales</option><option>Improve campaign performance</option><option>Launch a new campaign</option><option>Audit existing advertising</option></select></label>
+<label>Monthly ad budget<select><option>Not advertising yet</option><option>Under ₦100,000</option><option>₦100,000–₦500,000</option><option>₦500,000–₦2,000,000</option><option>Above ₦2,000,000</option></select></label></div>
+<label>What would success look like?<textarea required></textarea></label>
+<label style="display:flex;gap:8px;align-items:flex-start"><input type="checkbox" required style="width:auto;margin-top:3px">I agree to be contacted about my enquiry under the privacy policy.</label>
+<button class="btn" type="submit" style="justify-content:space-between">Request my strategy call <i>↗</i></button>
+</form>
+<p class="sent" id="ok" style="background:#fff;border-radius:26px;padding:24px;align-self:start">Request received. We will contact you to confirm the next step.</p>
+</div></div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><a class="logo" href="#top"><b></b>AdVanta Media</a><p style="color:var(--mut);margin-top:12px;max-width:30ch;font-size:.92rem">Performance marketing built around measurable business goals.</p></div>
+<div><h4>Services</h4><ul><li>Meta Ads</li><li>Google Ads</li><li>TikTok Ads</li><li>Campaign audits</li></ul></div>
+<div><h4>Company</h4><ul><li><a href="#work">Case studies</a></li><li><a href="#process">Process</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></div>
+<div><h4>Contact</h4><ul><li>[Verified email]</li><li>[Verified phone]</li><li>Privacy Policy</li><li>Terms of Service</li></ul></div>
+</div>
+<p class="copy">We believe in clear reporting, responsible advertising and performance claims backed by evidence. © 2026 AdVanta Media. All rights reserved.</p>
+</div></footer>
+</body>
+</html>
